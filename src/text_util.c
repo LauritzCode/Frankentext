@@ -8,7 +8,7 @@ void replace_non_printable_chars_with_space(char *s) {
     // if its not printable AND not newline, carriage return or tab we replace
     // with space
 
-    if (!isprint(c) && c != '\n' && c != '\r' && c != 't') {
+    if (!isprint(c) && c != '\n' && c != '\r' && c != '\t') {
       *p = ' ';
     }
   }
